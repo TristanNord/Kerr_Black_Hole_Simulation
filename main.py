@@ -1,4 +1,3 @@
-
 import taichi as ti
 import math
 import os
@@ -315,7 +314,8 @@ final = ti.Vector.field(3, ti.f32, shape=gg)
 
 place_p()
 
-for frame in range(frame_T):
+#for frame in range(frame_T):
+while window.running:
     update_p()
 
     camera.track_user_inputs(window, movement_speed=2, hold_key=ti.ui.RMB)
@@ -327,4 +327,4 @@ for frame in range(frame_T):
 
     canvas.scene(scene)
     window.show()
-    window.save_image(f"/Users/tristannormandeau/Desktop/blackHole/frame_{frame:04d}.png")
+    #window.save_image(f"/Users/tristannormandeau/Desktop/blackHole/frame_{frame:04d}.png")
