@@ -23,7 +23,7 @@ ch_B = ti.Vector([0,0,10])
 
 #Parametre du trou noir
 M = 1
-a = 1
+a = 0.8
 r_s = (2 * G * M) / c**2
 r_h = (r_s + math.sqrt(r_s**2 - 4 * a**2)) / 2
 T_H = 1 / (8 * math.pi * M)
